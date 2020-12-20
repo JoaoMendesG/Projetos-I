@@ -1,4 +1,4 @@
-Repositório destinado a apresentar alguns projetos iniciais referente a web
+Repositório destinado a projetos referente a programação web
 
 - HTML 5 e CSS 3
 - JavaScript
