@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--setando o idioma que o navegador devera ler o site-->
+<html lang="pt-BR">
+    <head>
+        <!--setando o tipo de linguagem-->
+        <meta charset="UTF-8">
+
+        <!--colocando o nome do site-->
+        <title>Apple (Brasil)</title>
+
+        <!--setando a largura da tela de acordo com o dispositivo, escala inicial da pagina será de 1 e se desejamos a opção de encolhimento para
+        caber o conteudo da pagina num espaço menor-->
+        <meta content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+        <!--criando o link entre o doc html e o css-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="sortcut icon" href="apple/favicon.ico"/>   <!--adc um icone-->  
+
+    </head>
+    <body> <!--o conteudo vai dentro do body-->
+        <header class="header"> <!--basicamente é o cabeçalho da pagina, determinando o tipo de classe dessa tag-->
+            <ul class="header-conteiner"> <!--lista não ordenada !-->
+                <li> <!--item da lista-->
+                    <a href="#"> <img src="apple/img/apple.svg" alt="apple-icon"> </a> <!--a com link de referencia nulo, para nenhum lugar linkado no icone da maça-->
+                </li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#"><img src="apple/img/search.svg" alt="lupa"></a></li>
+                <li><a href="#"><img src="apple/img/bag.svg" alt="bag"></a></li>
+            </ul>
+        </header>
+        <div class="headsup">
+            <p>
+                <a href="#">Compre online</a> com entrega grátis.
+            </p>
+        </div>
+        <section class="iphone-se"> <!--seção de apresentação de um conteudo que pode ou nao se repetir-->
+            <h1 class="title">iPhone SE</h1>  <!--adc um titulo-->
+            <h2 class="suptitle">É muito iPhone por menos.</h2>  <!--e adc um subtitulo para identificar melhor no css, serve tbm para a section de baixo-->
+            <a href="#">Saiba mais</a>
+            <a href="#">Comprar</a>
+        </section>
+
+        <section class="iphone-11">
+            <h1>iPhone 11</h1>
+            <h2>Tudo. Na medida certa.</h2>
+            <a href="#">Saiba mais</a>
+            <a href="#">Comprar</a>
+        </section>
+    </body>
+    <footer>
+        <p class="footer">   <!--rodape-->
+            Copyright © 2020 João Pedro Mendes Gomes Study. Todos os direitos reservados.
+        </p>
+    </footer>
+</html>
+
+<!--ps: foi instalado o live server para criar um servidor local,
+    serve basicamente para alterar automaticamente e diretamente os sites que forem abertos por ele.
+tbm foi instalado o prettier-->

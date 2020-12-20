@@ -1,0 +1,144 @@
+* { /* seleciona a pagina toda */
+    margin: 0;   /* setando margem e padding da pag para 0. Boa prática ! */
+    padding: 0;
+}
+
+li { /* selecionando o grupo que eu quero alterar */
+    list-style: none; /* alterando o elemento, nesse caso, removendo as bolinha de marcação da lista ordenada */
+}
+
+/* linkadno fontes externas ao VSCode */
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url(fonts/sf-pro-text-regular.ttf) format('truetype');  /* formato de fonte bem comum em pag web */
+}
+
+body {
+    font-family: 'SF Pro Regular Text', sans-serif;   /* indicando o tipo de fonte a ser usada */
+    color: #1d1d1d;
+}
+
+/* ajustando titulo */
+h1 {
+    font-size: 56px;
+    letter-spacing: -0.005em;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.header {
+    background: #333333;  /* alterando a cor de fundo do cabeçalho */
+    padding: 10.5px 0;   /* preenchimento */
+}
+
+.header-conteiner {
+    font-size: 12px;
+    display: flex;   /* deixa tudo na mesma linha */
+    justify-content: space-between;  /* justifica o alinhamento entre os elementos do display */
+    max-width: 980px;  /* tamanho max em que minha tela pode chegar */
+    margin: 0 auto;  /* zera a margin do eixo y e deixa ajustavel a margem do eixo x */
+}
+
+.header-conteiner li a {  /* posso fazer isso para acessar as tags de tags por causa do efeito cascata do html */
+    color: #bbbbbb;  /* altera a cor de todos os links, inclusive as imagens */
+    text-decoration: none;  /* remove o sublinhamento das palavras */
+    font-size: 14px;
+    letter-spacing: -0.01em;
+}
+
+.header-conteiner li a:hover {
+    color: #ebebf0f6;
+}
+
+/* centralizando */
+.headsup {
+    text-align: center;
+    font-size: 14px;
+}
+
+.headsup p {
+    background-color: #fbfbfd;
+    padding: 12px 0;
+    line-height: 1.47859;
+}
+
+/* alterando cor dos links do texto abaixo do cabeçalho */
+.headsup a {
+    color: #06c;
+    text-decoration: none;
+}
+
+/* ao passar o mouse por cima do link, a aparencia dele muda */
+.headsup a:hover {
+    color: #06c;
+    text-decoration: underline;
+}
+
+/* setando uma imagem como background */
+.iphone-se, .iphone-11 {   /* dps de um tempo, obs que adc o iphone 11 aq seria melhor */
+    width: 100%;    /* dimensões da imagem */
+    height: 692px;
+    background: url(/apple/img/bg1.jpg);
+    background-position: center;    /* salvoooooo, alinha a imagem no centro */
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.iphone-se .title, .iphone-11 .title {   /* buscando dentro da classe iphone-se e iphone 11 a classe title e sup embaixo */
+    margin-bottom: 6px;
+}
+
+.iphone-se .suptitle, .iphone-11 .suptitle {
+    margin-bottom: 12px;
+}
+
+/* criando a setinha > arrow de seleção, imagenzinha */
+.iphone-se a, .iphone-11 a {   /* pegando o a */ 
+    color: #2997ff;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.iphone-se a:hover, .iphone-11 a:hover {   /* pegando o a no momento do hover */ 
+    color: #2997ff;
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+.iphone-se a:last-child, .iphone-11 a:last-child { /* seleciona o ultimo link inserido na linha, o da direita */
+    margin-left: 26px;  /* separando os links, gerando um espaçamento */
+}
+
+.iphone-se a::after, .iphone-11 a::after {  /* adição e ser feita após o termino do link */
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url(/apple/img/seta1.svg) no-repeat;   /* por padrão ele repete o conteudo, logo passa-se o no repeat */
+    margin-left: 6px;
+}
+
+.iphone-11 {
+    margin-top: 12px;
+    background: url(/apple/img/bg2.jpg);
+    color: #1d1d1d;
+}
+
+.iphone-11 a::after {
+    background: url(/apple/img/seta2.svg);
+}
+
+.iphone-11 a {
+    color: #06c;
+}
+
+/* rodape */
+.footer {
+    margin-bottom: 40px;
+    text-align: center;
+}
