@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <title>Usando JavaScript</title>
+        <meta charset="utf-8">
+        <!--linkando o arq de script-->
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </head>
+
+    <body onload="load()">
+
+        <!--pode-se fazer o script diretamente por aqui também-->
+        <!--<h1>Página para Prática</h1>-->
+        <!--<button type="button" onclick="click()">Clique aqui</button>-->
+        <button type="button" onclick="clicar()">Clique aqui</button>
+        <p id="obg" onclick="redirect()"></p>
+        <p id="mouse" onmouseover="change(this)" onmouseout="back(this)">Passe o mouse aqui</p>
+        <p id="mouse2" onmouseover="change(this)" onmouseout="back(this)">Passe o mouse aqui</p>
+        <select onchange="funcaoChange(this)">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select>
+    </body>
+
+</html>
